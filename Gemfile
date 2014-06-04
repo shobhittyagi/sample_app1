@@ -4,12 +4,17 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.4'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'therubyracer'
 gem 'rspec-rails', '2.13.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
-
+group :development, :test do # <<<< :development, not devlopment
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg','0.15.1'
+end
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
