@@ -7,10 +7,14 @@ gem 'rails', '4.0.4'
 # gem 'sqlite3'
 gem 'therubyracer'
 gem 'rspec-rails', '2.13.1'
+gem 'rspec-rails', '2.13.1'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 group :development, :test do # <<<< :development, not devlopment
   gem 'sqlite3'
+  gem 'rspec-rails', '2.13.1'
+  gem 'guard-rspec', '2.5.0'
 end
 group :production do
   gem 'pg','0.15.1'
