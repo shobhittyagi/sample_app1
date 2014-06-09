@@ -8,7 +8,7 @@ gem 'rails', '4.0.4'
 gem 'therubyracer'
 gem 'rspec-rails', '2.13.1'
 gem 'rspec-rails', '2.13.1'
-
+gem 'factory_girl_rails', '4.2.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 group :development, :test do # <<<< :development, not devlopment
